@@ -93,18 +93,13 @@ async function seedOrigenTazaJV() {
   }
 }
 
-db.connect()
-  .then(() => console.log('✅ Conectado a PostgreSQL - coffee_experience'))
-  .then(async () => {
-    try {
-      await ensureOtjSchema();
-      await seedOrigenTazaJV();
-    } catch (e) {
-      console.warn('Origen y Taza JV (schema/semilla):', e.message);
-    }
-  })
-  .catch(err => console.error('❌ Error:', err.message));
-
+const db = new Pool({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: 5432,
+});
 // ── USUARIOS ──────────────────────────────────────────────────────────────────
 
 app.post('/api/registro', async (req, res) => {
@@ -1139,7 +1134,5 @@ app.post('/api/taza/degustacion', async (req, res) => {
 
 // ── SERVIDOR ──────────────────────────────────────────────────────────────────
 
-const PORT = Number(process.env.PORT) || 5000;
-app.listen(PORT, () => {
-  console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
-});
+
+module.exports = app;
