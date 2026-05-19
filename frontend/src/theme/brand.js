@@ -1,0 +1,57 @@
+/** Origen y Taza JV — paleta y textos de marca */
+export const BRAND = {
+  name: 'Origen y Taza JV',
+  short: 'Origen y Taza',
+  slogan: 'Conectando historias, desde la finca hasta tu mesa',
+  region: 'Sumapaz · Cundinamarca · Colombia',
+};
+
+export const JV = {
+  rose: '#F4A9C4',
+  gold: '#D4AF37',
+  goldDark: '#B8962E',
+  cream: '#FFF3E0',
+  coffee: '#4B2E2B',
+  coffeeDeep: '#3a231f',
+  bgPage: 'linear-gradient(135deg, #4B2E2B 0%, #3a231f 100%)',
+  btn: 'linear-gradient(135deg, #D4AF37, #B8962E)',
+  btnText: '#3a231f',
+  card: 'rgba(75, 46, 43, 0.82)',
+  cardLight: 'rgba(255, 243, 224, 0.08)',
+  border: 'rgba(212, 175, 55, 0.35)',
+  borderRose: 'rgba(244, 169, 196, 0.45)',
+  text: '#FFF3E0',
+  textMuted: 'rgba(255, 243, 224, 0.55)',
+  textSoft: 'rgba(255, 243, 224, 0.38)',
+  accent: '#D4AF37',
+  accentRose: '#F4A9C4',
+  qrDark: '#4B2E2B',
+  qrLight: '#FFF3E0',
+};
+
+/** Paleta unificada para todos los dashboards (estilos inline) */
+export const C = {
+  bg: JV.coffeeDeep,
+  bgGrad: JV.coffee,
+  bgCard: JV.card,
+  card: JV.card,
+  bgInput: JV.cardLight,
+  input: JV.cardLight,
+  border: JV.border,
+  borderRose: JV.borderRose,
+  gold: JV.gold,
+  goldL: JV.rose,
+  rose: JV.rose,
+  cream: JV.cream,
+  muted: JV.textMuted,
+  textSoft: JV.textSoft,
+  danger: '#e05c5c',
+  green: '#8fbc8f',
+  teal: JV.gold,
+  tealL: JV.rose,
+  purple: JV.rose,
+  purpleL: JV.gold,
+  btn: JV.btn,
+  btnText: JV.btnText,
+  pageBg: JV.bgPage,
+};
