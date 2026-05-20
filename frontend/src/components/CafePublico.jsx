@@ -65,13 +65,13 @@ function RadarCompleto({ cafe, cata }) {
       <svg viewBox={`0 0 ${size} ${size}`} width={size} height={size}>
         {grids.map((g, i) => <polygon key={i} points={g} fill="none" stroke="rgba(212,175,55,0.15)" strokeWidth="1" />)}
         {attrs.map((_, i) => {
-          const b = puntoBase(i);
+      
           return <line key={i} x1={cx} y1={cy} x2={b.x} y2={b.y} stroke="rgba(212,175,55,0.15)" strokeWidth="1" />;
         })}
         <polygon points={poly} fill="rgba(212,175,55,0.2)" stroke={JV.gold} strokeWidth="2" />
         {puntosData.map((p, i) => <circle key={i} cx={p.x} cy={p.y} r="4" fill={attrs[i].color} />)}
         {attrs.map((a, i) => {
-          const b     = puntoBase(i);
+
           const angle = (Math.PI * 2 * i) / n - Math.PI / 2;
           const lx    = cx + (r + 20) * Math.cos(angle);
           const ly    = cy + (r + 20) * Math.sin(angle);
