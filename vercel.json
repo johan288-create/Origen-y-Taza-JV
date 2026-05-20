@@ -1,4 +1,4 @@
-{
+{{
   "version": 2,
   "builds": [
     {
@@ -17,7 +17,7 @@
       "destination": "backend/api/index.js"
     },
     {
-      "source": "/((?!api).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
