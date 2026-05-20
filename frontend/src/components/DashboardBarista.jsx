@@ -1,7 +1,7 @@
 // frontend/src/components/DashboardBarista.jsx
 import React, { useEffect, useState } from "react";
 import { API_BASE_URL as BASE_URL, appOrigin } from "../config";
-import { C, BRAND } from "../theme/brand";
+import { C,JV, BRAND } from "../theme/brand";
 
 /* ─────────────────── UI ─────────────────── */
 function Boton({ children, onClick, small, outline, color }) {

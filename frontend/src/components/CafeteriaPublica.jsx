@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import RadarCafe from './RadarCafe';
 import { API_BASE_URL as BASE_URL, appOrigin } from '../config';
+import { C, JV } from '../theme/brand';
 const PREGUNTAS = [
   { id: 'sabor', texto: '¿Qué sabores prefieres?', opciones: [
     { label: 'Frutal y floral',    value: 'frutal'    },
