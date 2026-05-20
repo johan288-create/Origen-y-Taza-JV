@@ -27,6 +27,9 @@ const db = new Pool({
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   port:     5432,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 async function ensureOtjSchema() {
@@ -1125,6 +1128,9 @@ app.post('/api/taza/degustacion', async (req, res) => {
 });
 
 // ── SERVIDOR ──────────────────────────────────────────────────────────────────
-
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en puerto ${PORT}`);
+});
 
 module.exports = app;
