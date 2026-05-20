@@ -1,7 +1,5 @@
 {
-  "scripts": {   
-  "build": "CI=false react-scripts build"
-  "name   ": "backend",
+  "name": "backend",
   "version": "1.0.0",
   "private": true,
   "description": "Coffee Experience API (Express + PostgreSQL)",
@@ -22,7 +20,5 @@
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "pg": "^8.20.0"
-    
   }
-  
 }
