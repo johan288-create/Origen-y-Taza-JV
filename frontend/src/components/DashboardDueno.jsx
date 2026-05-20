@@ -140,7 +140,7 @@ function PanelMenu({ cafeteria }) {
   const [cargando,   setCargando]   = useState(false);
 
   useEffect(() => { cargarMenu(); cargarCafes(); }, []);
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   async function cargarMenu() {
     const res = await fetch(`${BASE_URL}/cafeterias/${cafeteria.id}/menu`);
     const data = await res.json();
@@ -293,7 +293,7 @@ function PanelBaristas({ cafeteria }) {
   const [msg,           setMsg]           = useState(null);
 
   useEffect(() => { cargarBaristas(); cargarTodos(); }, []);
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   async function cargarBaristas() {
     const res = await fetch(`${BASE_URL}/cafeterias/${cafeteria.id}/baristas`);
     const data = await res.json();
@@ -384,7 +384,7 @@ function PanelPedidos({ cafeteria }) {
   const [cargando, setCargando] = useState(true);
 
   useEffect(() => { cargar(); const t = setInterval(cargar, 15000); return () => clearInterval(t); }, []);
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   async function cargar() {
     const res = await fetch(`${BASE_URL}/pedidos-cafeteria/${cafeteria.id}`);
     const data = await res.json();
@@ -490,7 +490,7 @@ export default function DashboardDueno({ usuario, onLogout }) {
   const [guardando, setGuardando] = useState(false);
 
   useEffect(() => { cargarCafeteria(); }, []);
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   async function cargarCafeteria() {
     setCargando(true);
     try {

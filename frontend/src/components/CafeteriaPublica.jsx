@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import RadarCafe from './RadarCafe';
 import { API_BASE_URL as BASE_URL, appOrigin } from '../config';
-
 const PREGUNTAS = [
   { id: 'sabor', texto: '¿Qué sabores prefieres?', opciones: [
     { label: 'Frutal y floral',    value: 'frutal'    },
@@ -587,7 +586,7 @@ export default function CafeteriaPublica() {
           usuario={usuario}
           onLogin={u => setUsuario(u)}
           onCerrar={() => setCafeModal(null)}
-          onConfirmado={() => setPedidosCount(p => p + 1)}
+          onConfirmado={() => setPaso(p => p + 1)}
         />
       )}
     </div>

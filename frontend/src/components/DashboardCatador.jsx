@@ -303,7 +303,7 @@ export default function DashboardCatador({ usuario, onLogout }) {
   const [cargando, setCargando] = useState(true);
 
   useEffect(() => { cargar(); }, []);
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   async function cargar() {
     setCargando(true);
     try {

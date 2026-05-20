@@ -297,7 +297,7 @@ function PanelHistoria({ cafe, usuario }) {
   const chunksRef = useRef([]);
 
   useEffect(() => { cargar(); }, [cafe.id]);
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   async function cargar() {
     try {
       const res  = await fetch(`${BASE_URL}/cafes/${cafe.id}/historia-narrada`);
@@ -470,7 +470,7 @@ function PanelPreparaciones({ cafe, usuario }) {
   const [cargando,      setCargando]      = useState(false);
 
   useEffect(() => { cargar(); }, [cafe.id]);
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   async function cargar() {
     try {
       const res  = await fetch(`${BASE_URL}/cafes/${cafe.id}/preparaciones`);
@@ -1285,7 +1285,7 @@ export default function DashboardCaficultor({ usuario, onLogout }) {
   const [misCafes, setMisCafes] = useState([]);
 
   useEffect(() => { cargarMisCafes(); }, []);
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   async function cargarMisCafes() {
     try {
       const res  = await fetch(`${BASE_URL}/caficultor/${usuario.id}/mis-cafes`);
