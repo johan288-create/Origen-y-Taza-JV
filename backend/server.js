@@ -92,8 +92,6 @@ async function seedOrigenTazaJV() {
     );
   }
 }
-
-});
 // ── USUARIOS ──────────────────────────────────────────────────────────────────
 
 app.post('/api/registro', async (req, res) => {
