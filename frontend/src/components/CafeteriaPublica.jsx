@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import RadarCafe from './RadarCafe';
 import { API_BASE_URL as BASE_URL, appOrigin } from '../config';
-import { C, BRAND, JV } from '../theme/brand';
 
 const PREGUNTAS = [
   { id: 'sabor', texto: '¿Qué sabores prefieres?', opciones: [
@@ -422,7 +421,6 @@ export default function CafeteriaPublica() {
   const [respuestas,   setRespuestas]   = useState({});
   const [recomendados, setRecomendados] = useState([]);
   const [cafeModal,    setCafeModal]    = useState(null);
-  const [pedidosCount, setPedidosCount] = useState(0);
   const [usuario,      setUsuario]      = useState(null);
 
   useEffect(() => {

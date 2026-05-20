@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { registrarUsuario } from '../api';
-import { C, BRAND, JV } from '../theme/brand';
 
 const ROLES = [
   { key: 'cliente',         label: 'Cliente',        color: '#7ec8a0', desc: 'Descubre y valora cafés' },

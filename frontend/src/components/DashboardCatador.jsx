@@ -88,7 +88,6 @@ function RadarMini({ valores }) {
     <svg viewBox={`0 0 ${size} ${size}`} width={size} height={size}>
       {grids.map((g, i) => <polygon key={i} points={g} fill="none" stroke="rgba(160,120,220,0.15)" strokeWidth="1" />)}
       {ATRIBUTOS.map((_, i) => {
-        const b = puntoBase(i);
         return <line key={i} x1={cx} y1={cy} x2={b.x} y2={b.y} stroke="rgba(160,120,220,0.15)" strokeWidth="1" />;
       })}
       <polygon points={poly} fill="rgba(155,111,212,0.25)" stroke="#9b6fd4" strokeWidth="2" />

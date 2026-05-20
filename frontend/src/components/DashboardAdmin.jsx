@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { getStats, getSolicitudes, getUsuarios, responderSolicitud, cambiarRolUsuario } from '../api';
-import { C, BRAND, JV } from '../theme/brand';
+import { getSolicitudes, getUsuarios, responderSolicitud, cambiarRolUsuario } from '../api';
+import { Link } from 'react-router-dom';
 
 const VENTAS_SEMANA = [
   { dia: 'Lun', ventas: 320000, pedidos: 28 },
