@@ -211,7 +211,7 @@ export default function MapaCafeterias({ onLogin }) {
         boxShadow: '0 4px 24px rgba(0,0,0,0.5)',
         backdropFilter: 'blur(10px)',
       }}>
-        <img src={`${process.env.PUBLIC_URL}/logo-origen-taza.svg`} alt="" style={{ width: 32, height: 32, borderRadius: 8 }} />
+        <img src={`${process.env.PUBLIC_URL}/logo-cafe.jpeg`} alt="" style={{ width: 32, height: 32, borderRadius: 8 }} />
         <span style={{ fontFamily: 'Georgia,serif', fontSize: 15, color: JV.gold, fontWeight: 700 }}>
           {BRAND.short}
         </span>

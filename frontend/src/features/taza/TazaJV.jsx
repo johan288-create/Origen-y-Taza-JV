@@ -145,7 +145,7 @@ export default function TazaJV() {
     <div className="min-h-screen bg-gradient-to-b from-jv-cream to-jv-rose/25 text-jv-coffee pb-10">
       <header className="sticky top-0 z-10 backdrop-blur-md bg-jv-cream/90 border-b border-jv-gold/30 px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src={`${process.env.PUBLIC_URL}/logo-origen-taza.svg`} alt="" className="w-10 h-10 rounded-xl" />
+          <img src={`${process.env.PUBLIC_URL}/logo-cafe.jpeg`} alt="" className="w-10 h-10 rounded-xl" />
           <div>
             <h1 className="font-display text-lg leading-tight text-jv-coffee">Origen y Taza JV</h1>
             <p className="text-[11px] text-jv-coffee/60">Conectando historias, desde la finca hasta tu mesa</p>
